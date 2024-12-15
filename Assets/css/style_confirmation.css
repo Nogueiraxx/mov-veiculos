@@ -1,0 +1,93 @@
+body {
+    background-color: #1e2727;
+    color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.retangular_bg {
+    background-color: #0D1819;;
+    border-radius: 15px;
+    padding: 40px 60px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 700px;
+    width: 90%;
+}
+
+.icone-atencao {
+    width: 170px;
+    height: 120px;
+    margin-bottom: 2px;
+}
+
+.atencao {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0px 0;
+}
+
+.mensagem {
+    font-size: 24px;
+    margin: 5px 10px;
+}
+
+.linha-separacao {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+
+.dados {
+    text-align: justify;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 1.8;
+}
+
+.dados p {
+    margin: 5px 0;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.btn { 
+    font-family: "Bebas Neue", sans-serif; /* Fonte Bebas Neue */
+    font-weight: 400;
+    font-size: 20px;
+    background-color: #00FF44;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 45px;
+    margin: 25px 90px;
+   /* width: 150px;*/
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase; /* Deixa o texto em maiúsculas */
+}
+
+.btn.confirmar:hover {
+    background-color: #00CC37;
+}
+
+.btn.corrigir {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.btn.corrigir:hover {
+    background-color: #cc0000;
+}
+
+

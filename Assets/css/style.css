@@ -1,0 +1,174 @@
+/* Configurações gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e2727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} /* Para fazer com que não tenha scroll action, utilizando assim 100% do body
+
+/* Fundo principal */
+#retangular_bg {
+    background: #0D1819;
+    border-radius: 20px;
+    width: 900px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Conteúdo centralizado */
+.content {
+    text-align: center;
+    color: white;
+}
+
+/* Títulos com Bebas Neue */
+h1, h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase; /* Mantém o texto em maiúsculas */
+    margin-top: 0px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+
+/* Botões */
+.buttons-home {
+    display: flex;
+    flex-direction: column; /* Empilha os botões */
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os botões */
+}
+
+.buttons-register {
+    display: flex;
+    align-items: center;
+}
+
+.btn-register {
+    font-family: "Bebas Neue", sans-serif; /* Fonte Bebas Neue */
+    font-weight: 400;
+    font-size: 20px;
+    background-color: #00FF44;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 45px;
+    margin: 25px 90px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase; /* Deixa o texto em maiúsculas */
+}
+
+.btn-register:hover {
+    background-color: #00CC37;
+}
+
+.btn-home {
+    font-family: "Bebas Neue", sans-serif; /* Fonte Bebas Neue */
+    font-weight: 400;
+    font-size: 20px;
+    background-color: #00FF44;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 30px;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase; /* Deixa o texto em maiúsculas */
+}
+
+.btn-home:hover {
+    background-color: #00CC37;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 30px;
+    font-size: 10px;
+    color: #B0B0B0;
+    line-height: 1.5;
+    gap: 2px;
+}
+
+.icon {
+    margin-top: 10px;
+    width: 50px;
+    height: auto;
+}
+/* Formulários */
+.form-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Linha de campos */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    flex-flow: row wrap;
+    padding: 10px;
+}
+
+/* Grupo de inputs */
+.form-group {
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    flex-basis: 100%; /* Flexível para ajustar o tamanho */
+}
+
+.form-group label {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+.form-row:first-child .form-group {
+    flex-basis: 46%; /* 2 campos na mesma linha */
+}
+
+.form-row:nth-child(2) .form-group {
+    flex-basis: 46%; /* 2 campos na mesma linha */
+}
+
+.form-row:nth-child(3) .form-group:nth-child(1),
+.form-row:nth-child(3) .form-group:nth-child(2),
+.form-row:nth-child(3) .form-group:nth-child(3) {
+    flex-basis: 28%; /* 3 campos na mesma linha */
+}
