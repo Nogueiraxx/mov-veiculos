@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Dados</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/css/style_confirmation.css">
+
+</head>
+<body onload="alteraDados()">    
+    <div class="retangular_bg">
+        <img src="Assets/images/exclamation-removebg-preview.png" alt="Ícone de Atenção" class="icone-atencao">
+        <h1 class="atencao">Atenção!</h1>
+        <p class="mensagem">Os dados a seguir serão salvos:</p>
+        <hr class="linha-separacao">
+        
+        <div id="lista-dados" class="dados">
+            <p><strong>Modelo:</strong> <span id="confModelo"></span>;</p>
+            <p><strong>Hora de entrada/saida:</strong> <span id="confHorario"></span>;</p>
+            <p><strong>Ocorrências:</strong> <span id="confOcorrencia"></span>;</p>
+            <p><strong>Condutor:</strong> <span id="confCondutor"></span>;</p>
+            <p><strong>Placa:</strong> <span id="confPlaca"></span>;</p>
+            <p><strong>Km rodados:</strong> <span id="confKmRodados"></span>;</p>
+            <p><strong>Origem/Destino:</strong> <span id="confOrigDest"></span>;</p>
+        </div>
+        
+        <hr class="linha-separacao">
+
+        <div class="botoes">
+            <button id="confirmar" class="btn confirmar" onclick="confirmar()"><b>Sim, estão corretos</b></button>
+            <button id="botao-voltar" class="btn corrigir">Não, preciso corrigir</button>
+        </div>
+    </div>
+    <script src="Assets/js/script.js"> </script>
+</body>
+</html>
