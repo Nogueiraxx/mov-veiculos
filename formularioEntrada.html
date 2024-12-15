@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Movimentação</title>
+    <!-- Fonte Bebas Neue -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+<body>
+    <div id="retangular_bg">
+        <div class="content">
+            <!-- Título da página -->
+            <h1>CADASTRO DE ENTRADA</h1>
+            
+            <!-- Formulário -->
+            <form class="form-container">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="modelo">MODELO DO VEÍCULO:</label>
+                        <input type="text" id="modelo" name="modelo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="horaEntrada">HORA DE ENTRADA:</label>
+                        <input type="text" id="hora" name="hora" readonly>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="ocorrencia">OCORRÊNCIAS:</label>
+                        <input type="text" id="ocorrencia" name="ocorrencia">
+                    </div>
+                    <div class="form-group">
+                        <label for="condutor">CONDUTOR:</label>
+                        <input type="text" id="condutor" name="condutor">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="placa">PLACA:</label>
+                        <input type="text" id="placa" name="placa">
+                    </div>
+                    <div class="form-group">
+                        <label for="km-rodados">KM RODADOS:</label>
+                        <input type="text" id="km-rodados" name="km-rodados">
+                    </div>
+                    <div class="form-group">
+                        <label for="origem">ORIGEM:</label>
+                        <input type="text" id="localizacao" name="localizacao">
+                    </div>
+                </div>  
+            </form>
+
+            <div class="buttons_register">
+                <button id="envio" class="btn-register">SALVAR</button>
+                <button onclick="retornaIndex()" class="btn-register">FECHAR</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="Assets/js/script.js" >
+    </script>
+</body>
+</html>
